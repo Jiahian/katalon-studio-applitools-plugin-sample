@@ -1,9 +1,8 @@
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.remote.RemoteWebElement
-
-import com.applitools.eyes.Location
+import org.openqa.selenium.remote.RemoteWebElement as RemoteWebElement
+import com.applitools.eyes.Location as Location
 import com.applitools.eyes.RectangleSize as RectangleSize
 import com.applitools.eyes.selenium.Eyes as Eyes
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory

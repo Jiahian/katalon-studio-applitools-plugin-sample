@@ -1,7 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.WebElement
-
+import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -18,13 +16,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://automationpractice.com/index.php')
+WebUI.navigateToUrl('http://the-internet.herokuapp.com/login')
 
 WebUI.setViewPortSize(800, 600)
 
+WebUI.click(findTestObject('Object Repository/Page_The Internet/input_Username_username'))
+
+WebUI.click(findTestObject('Object Repository/Page_The Internet/button_Login'))
+
 CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow'('uniqueString1')
 
-CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject'(findTestObject('Page_My Store/input_Call us now_search_query'), 
+CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject'(findTestObject('Page_The Internet/div_Your username is invalid'), 
     'uniqueString2')
 
 WebUI.closeBrowser()

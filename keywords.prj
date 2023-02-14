@@ -6,6 +6,7 @@
    <UUID>4972f847-bfbe-409b-bcca-42f0180f7d3b</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\jia.hian.chee\OneDrive - Accenture\WorkSpace\Lioncity\katalon-studio-applitools-plugin-sample\katalon-studio-applitools-plugin-sample\keywords.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -24,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>GENERIC</type>
 </Project>
