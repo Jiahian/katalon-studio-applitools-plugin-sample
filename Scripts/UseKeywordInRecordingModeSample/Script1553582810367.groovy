@@ -16,18 +16,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://the-internet.herokuapp.com/login')
+WebUI.navigateToUrl('https://docs.katalon.com/docs/author/keywords/using-keywords-in-katalon-studio/web-testing/applitools-integration-in-katalon-studio#use-applitools-functions-in-recording')
 
-WebUI.setViewPortSize(800, 600)
+//WebUI.setViewPortSize(800, 600)
 
-WebUI.click(findTestObject('Object Repository/Page_The Internet/input_Username_username'))
+//WebUI.click(findTestObject('Object Repository/Page_The Internet/input_Username_username'))
 
-WebUI.click(findTestObject('Object Repository/Page_The Internet/button_Login'))
+//WebUI.click(findTestObject('Object Repository/Page_The Internet/button_Login'))
 
-CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow'('uniqueString1')
+CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow'('scrollpage')
 
-CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject'(findTestObject('Page_The Internet/div_Your username is invalid'), 
-    'uniqueString2')
+//CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject'(findTestObject('Page_The Internet/div_Your username is invalid'), 'uniqueString2')
 
 WebUI.closeBrowser()
 

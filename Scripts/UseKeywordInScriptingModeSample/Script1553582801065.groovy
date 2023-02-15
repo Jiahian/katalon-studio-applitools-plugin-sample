@@ -25,18 +25,18 @@ import internal.GlobalVariable as GlobalVariable
 //use 'https://applitools.com/helloworld2?diff1' to make changes to page
 WebUI.openBrowser('https://applitools.com/helloworld2?diff2')
 
-WebUI.setViewPortSize(800, 600)
+//WebUI.setViewPortSize(800, 600)
 
 //initialize eyes
-Eyes eyes = CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen'('uniqueString0', null)
+Eyes eyes = CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen'('batchname', null)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-driver.findElement(By.id('name')).sendKeys('My Name')
+driver.findElement(By.id('name')).sendKeys('random name test')
 
 By locatorBy = By.id('name')
 
-eyes.checkRegion(locatorBy, 'check checkRegion by selector keyword')
+eyes.checkRegion(locatorBy, 'stepname: check checkRegion by selector keyword')
 
 driver.findElement(By.tagName('button')).click()
 
@@ -46,7 +46,7 @@ WebElement element = driver.findElement(By.xpath('//img[contains(@class,\'diff2\
 CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkElement'(eyes, element)
 
 //check window not including eyes set up
-eyes.checkWindow('check checkWindow')
+eyes.checkWindow('stepname: check checkWindow')
 
 CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose'(eyes)
 
